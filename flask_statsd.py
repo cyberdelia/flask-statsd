@@ -6,7 +6,7 @@ class StatsD(object):
         self.config = None
         self.statsd = None
         if app is not None:
-            self.init_app(self.app)
+            self.init_app(app)
         else:
             self.app = None
 
