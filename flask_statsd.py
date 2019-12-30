@@ -22,8 +22,9 @@ class StatsD(object):
 
         self.app = app
 
-        self.statsd = StatsClient(self.config['STATSD_HOST'],
-            self.config['STATSD_PORT'], self.config['STATSD_PREFIX'])
+        self.statsd = StatsClient(host=self.config['STATSD_HOST'],
+            port=self.config['STATSD_PORT'],
+            prefix=self.config['STATSD_PREFIX'])
 
     def timer(self, *args, **kwargs):
         return self.statsd.timer(*args, **kwargs)
