@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='Flask-StatsD',
-    version='0.1.1',
+    version='0.1.2',
     url='https://github.com/cyberdelia/flask-statsd',
     license='BSD',
     author='Timothee Peignier',
